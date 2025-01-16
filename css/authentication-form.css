@@ -1,85 +1,122 @@
 /* 👇👇👇 SCROLL DOWN TO THE "ADD YOUR FORM STYLES BENEATH" comment (line 25) 👇👇👇*/
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
-  padding: 30px;
+	padding: 30px;
+	display: flex;
+	gap: 35px;
 }
 
 h2 {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 p {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
-  border: 1px solid #a9a9a9;
-  padding: 20px;
+	border: 1px solid #a9a9a9;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
 }
 
 .subtext {
-  color: #a9a9a9;
-  font-weight: unset;
+	color: #a9a9a9;
+	font-weight: unset;
 }
 
 #sign-in,
 #sign-up {
-  width: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
 }
 
 a {
-  color: #335eea;
-  text-decoration: none;
+	color: #335eea;
+	text-decoration: none;
 }
 
 label {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 input {
-  width: 100%;
-  height: 30px;
-  padding: 5px;
+	width: 100%;
+	height: 30px;
+	padding: 5px;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-  width: max-content;
-  height: max-content;
-  padding: 0;
+	width: max-content;
+	height: max-content;
+	font-weight: normal;
 }
 
 input[type="submit"] {
-  width: unset;
-  height: unset;
-  padding: 14px 20px;
-  background: #335eea;
-  color: white;
-  font-size: 18px;
-  border: 1px solid #335eea;
-  border-radius: 8px;
-  appearance: none;
-  outline: none;
-  clear: left;
-  cursor: pointer;
+	width: unset;
+	height: unset;
+	padding: 14px 20px;
+	background: #335eea;
+	color: white;
+	font-size: 18px;
+	border: 1px solid #335eea;
+	border-radius: 8px;
+	appearance: none;
+	outline: none;
+	clear: left;
+	cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background: #294bbb;
+	background: #294bbb;
 }
 
 .form select {
-  height: 30px;
+	height: 30px;
+}
+
+.form-input-control {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.form-submit-control {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+.form-group-horizontal-control {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.form-group-vertical-control {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.form-input-control select {
+	width: 400px;
+	height: 25px;
 }
